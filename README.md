@@ -5,3 +5,22 @@ Singular value decomposition (SVD) is a linear algebra technique where a matrix 
 One application of SVD is data compression. Given a data matrix A (for instance an image), SVD can help to find a low rank matrix which is a good approximation of the original data matrix.<br />
 <br />
 In this project I have created a very basic image compression algorithm. Given a colored image, the algorithm will calculate the singular value decomposition of the image matrix. Then it will find the optimal number of dimensions required to get best tradeoff between reconstruction error and image fidelity. As a quality measure, I have used Frobenius Norm to calculate the reconstruction error.
+
+# How to run
+
+Run the following command to install the necessary libraries required to run the code in this repository.
+
+```
+pip install -r requirements.txt
+```
+
+Download the python script and run `python svd <image_path>`.
+
+# Output
+
+* The compressed image will be stored with the title `reconstructed_image` in the working directory.
+* Number of dimensions used in the reconstruction.
+* Percentage of "information contained" in the reconstructed_image.
+* Reconstruction error.
+
+# Analysis and results
