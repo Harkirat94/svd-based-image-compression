@@ -22,5 +22,3 @@ Download the python script and run `python svd <image_path>`.
 * Number of dimensions used in the reconstruction.
 * Percentage of "information contained" in the reconstructed_image.
 * Reconstruction error.
-
-# Analysis and results
